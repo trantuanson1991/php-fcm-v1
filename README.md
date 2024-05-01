@@ -26,7 +26,7 @@ HTTP v1 API, in contrast, leverages OAuth2 security model. You need to get an ac
 * Install the library with composer
 
   ```
-  composer require lkaybob/php-fcm-v1
+  composer require trantuanson1991/php-fcm-v1
   ```
 ****
 * Import the library with *autoload.php*

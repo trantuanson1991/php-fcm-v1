@@ -1,7 +1,7 @@
 {
     "name": "trantuanson1991/php-fcm-v1",
     "type": "library",
-    "description": "PHP Implementation of FCM HTTP v1 API",
+    "description": "PHP Implementation of FCM HTTP v1 API. Fork from lkaybob/php-fcm-v1 and change Firebase JWT, Guzzle version",
     "tags": ["php","notifications","google","android","gcm","ios","firebase","FCM","Firebase Cloud Messaging",
         "push notification"],
     "homepage": "https://github.com/lkaybob/phpFCMv1",

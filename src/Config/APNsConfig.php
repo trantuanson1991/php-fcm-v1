@@ -71,7 +71,7 @@ class APNsConfig implements CommonConfig {
             return $this -> payload;
         } else {
             // 'apns' should have 'header' & 'payload' field
-            $payload = array('apns' => array('headers' => $this -> payload));
+            $payload = array('apns' => $this -> payload);
             return $payload;
         }
     }
@@ -89,5 +89,25 @@ class APNsConfig implements CommonConfig {
         }
 
         return $converted->format('U');
+    }
+
+    /**
+     * Set an image for push notification
+     *
+     * @param string $image
+     * @return void
+     */
+    function setImage($image)
+    {
+        $this->payload = array_merge($this->payload, [
+            'payload' => [
+                'aps' => [
+                    'mutable-content' => 1
+                ]
+            ],
+            'fcm_options' => [
+                'image' => $image
+            ]
+        ]);
     }
 }
